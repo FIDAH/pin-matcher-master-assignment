@@ -57,6 +57,7 @@
     <script>
         document.getElementById('pinDisplay').disabled = true;
         document.getElementById('pin-matcher').disabled = true;
+      
         // code for hiding both the notify buttons initially
         const notify =  document.getElementsByClassName('notify');
         notify[0].style.display = "none"; 
@@ -99,11 +100,11 @@
 
  const backBtn = document.getElementById('backspace');
  backBtn.addEventListener('click', function(){
-     pinLength = document.getElementById('pin-matcher').value;
+  const  pinLength = document.getElementById('pin-matcher').value;
    if (pinLength  != ""){
 
     
- var pinLength = document.getElementById('pin-matcher').value; 
+ const pinLength = document.getElementById('pin-matcher').value; 
   const length = pinLength.length-1;
   const newNumber = pinLength.substring(0,length);
   document.getElementById('pin-matcher').value = newNumber;
