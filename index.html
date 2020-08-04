@@ -143,12 +143,8 @@
           const x= document.getElementById('try-left').innerText;
           var y = parseInt(document.getElementById('leftTryNumber').innerText);
           document.getElementById('leftTryNumber').innerText = y-1; 
-
-          if(pinLength.length!=4){
-         alert('pin must be of 4 numbers');
-         document.getElementById('leftTryNumber').innerText = y;
-         document.getElementById('not-matched').style.display = "none";
-        }
+           
+         
 
          if (y<=1){
 
